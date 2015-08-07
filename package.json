@@ -4,7 +4,8 @@
   "description": "setup your lanetix dev environment",
   "main": "index.js",
   "bin": {
-    "lx-clone": "./lib/clone.js"
+    "lx-clone": "./lib/clone.js",
+    "lx-install": "./lib/install.js"
   },
   "scripts": {
     "prepublish": "babel src --out-dir lib",
