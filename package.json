@@ -1,0 +1,27 @@
+{
+  "name": "lanetix-setup-dev",
+  "version": "1.0.0",
+  "description": "setup your lanetix dev environment",
+  "main": "index.js",
+  "bin": {
+    "lx-clone": "./lib/clone.js"
+  },
+  "scripts": {
+    "prepublish": "babel src --out-dir lib",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lanetix/setup-env.git"
+  },
+  "author": "Mike Atkins",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/lanetix/setup-env/issues"
+  },
+  "homepage": "https://github.com/lanetix/setup-env",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "standard": "^5.0.2"
+  }
+}
