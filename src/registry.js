@@ -4,7 +4,7 @@ export default {
   },
   api: {
     core: true,
-    migrate: 'bin/migrate up'
+    migrate: true
   },
   records: {
     migrate: true
