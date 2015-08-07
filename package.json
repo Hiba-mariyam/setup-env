@@ -5,7 +5,9 @@
   "main": "index.js",
   "bin": {
     "lx-clone": "./lib/clone.js",
-    "lx-install": "./lib/install.js"
+    "lx-install": "./lib/install.js",
+    "lx-migrate": "./lib/migrate.js",
+    "lx-start": "./lib/start.js"
   },
   "scripts": {
     "prepublish": "babel src --out-dir lib",
