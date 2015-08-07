@@ -7,7 +7,9 @@ __NB__ If you don't work at lanetix, you probably don't want to use this :wink:
 Installation
 ------------
 
+```bash
 bash $(curl https://raw.githubusercontent.com/lanetix/setup-env/master/install.sh)
+```
 
 if you already have a working environment, install this with
 ```bash
