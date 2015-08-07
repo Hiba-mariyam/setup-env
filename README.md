@@ -18,3 +18,6 @@ Usage
 -----
 
 - `lx-clone` clones all the repos for the lanetix services
+- `lx-install` npm install for all the lanetix services
+- `lx-migrate` run migrations for all services which have migrations
+- `lx-start` start all the core services
