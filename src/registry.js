@@ -3,9 +3,11 @@ export default {
     core: true
   },
   api: {
-    core: true
+    core: true,
+    migrate: 'bin/migrate up'
   },
   records: {
+    migrate: true
   },
   search: {
     core: true
