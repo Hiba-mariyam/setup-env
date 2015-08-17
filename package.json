@@ -26,5 +26,9 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "standard": "^5.0.2"
+  },
+  "dependencies": {
+    "yargonaut": "^1.0.0",
+    "yargs": "^3.19.0"
   }
 }
