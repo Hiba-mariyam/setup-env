@@ -34,7 +34,7 @@ const names = Object.keys(registry).filter((name) =>
 for (let name of names) {
   execSync(
     `${nvmExec} npm start`,
-    { cwd: name, stdio: 'inherit' }
+    { cwd: name, env: process.env, stdio: 'inherit' }
   )
   if (args.workers && registry[name].workers) {
     const workers = registry[name].workers
@@ -42,18 +42,18 @@ for (let name of names) {
       for (let worker of workers) {
         execSync(
           `${nvmExec} npm run ${worker}`,
-          { cwd: name, stdio: 'inherit' }
+          { cwd: name, env: process.env, stdio: 'inherit' }
         )
       }
     } else if (typeof workers === 'string') {
       execSync(
         `${nvmExec} npm run ${workers}`,
-        { cwd: name, stdio: 'inherit' }
+        { cwd: name, env: process.env, stdio: 'inherit' }
       )
     } else {
       execSync(
         `${nvmExec} npm run workers`,
-        { cwd: name, stdio: 'inherit' }
+        { cwd: name, env: process.env, stdio: 'inherit' }
       )
     }
   }

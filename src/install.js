@@ -6,6 +6,6 @@ import registry from './registry'
 for (let name of Object.keys(registry)) {
   execSync(
     `${nvmExec} npm install`,
-    { cwd: name, stdio: 'inherit' }
+    { cwd: name, env: process.env, stdio: 'inherit' }
   )
 }

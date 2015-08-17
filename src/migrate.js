@@ -8,7 +8,7 @@ for (let name of Object.keys(registry)) {
   if (migrate) {
     execSync(
       `${nvmExec} npm run migrate-up`,
-      { cwd: name, stdio: 'inherit' }
+      { cwd: name, env: process.env, stdio: 'inherit' }
     )
   }
 }
