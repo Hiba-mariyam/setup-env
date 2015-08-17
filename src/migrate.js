@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { execSync } from 'child_process'
 import nvmExec from './nvm-exec'
 import registry from './registry'
